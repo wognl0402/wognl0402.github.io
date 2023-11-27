@@ -22,7 +22,7 @@ h1, h2 {
 }
 /* Specific styles for the image container */
 td.image-container  {
-    width: 250px;
+    width: 100%;
     /* height: 200px; */
 }
 
@@ -34,7 +34,7 @@ td.image-container  {
     }
 }
 .hover-image {
-    width: 250px; /* or your desired size */
+    width: 100%; /* or your desired size */
     height: auto; /* maintain aspect ratio */
     transition: all 0.1s ease; /* smooth transition */
 }
