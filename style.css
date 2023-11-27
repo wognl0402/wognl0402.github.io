@@ -33,5 +33,13 @@ td.image-container  {
         /* height: 100px; */
     }
 }
+.hover-image {
+    width: 250px; /* or your desired size */
+    height: auto; /* maintain aspect ratio */
+    transition: all 0.1s ease; /* smooth transition */
+}
 
+.hover-image:hover {
+    content: url('images/profile_hover.jpg'); /* image on hover */
+}
 /* Additional styling as needed */
