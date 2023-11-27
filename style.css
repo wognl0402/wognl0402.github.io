@@ -22,15 +22,15 @@ h1, h2 {
 }
 /* Specific styles for the image container */
 td.image-container  {
-    width: 300px;
-    height: 200px;
+    width: 250px;
+    /* height: 200px; */
 }
 
 /* Responsive styles for smaller screens */
 @media (max-width: 600px) {
     td.image-container   {
-        width: 150px;
-        height: 100px;
+        width: 50px;
+        /* height: 100px; */
     }
 }
 
