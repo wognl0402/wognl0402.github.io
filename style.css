@@ -24,6 +24,18 @@ h1, h2 {
 }
 /* Specific styles for the image container */
 
+.compact-table {
+    width: 100%; /* Adjust width as needed */
+    border-collapse: collapse; /* Removes space between table cells */
+}
+
+.compact-table th, .compact-table td {
+    padding: 1px; /* Minimal padding for table cells */
+    text-align: left; /* Aligns text to the left, adjust as needed */
+}
+
+
+.compact-table tbody tr:nth
 
 /* Responsive styles for smaller screens */
 @media (max-width: 600px) {
@@ -41,5 +53,20 @@ h1, h2 {
 
 .hover-image:hover {
     content: url('images/profile_hover.png'); /* image on hover */
+.compact-table {
+    width: 100%; /* Adjust width as needed */
+    border-collapse: collapse; /* Removes space between table cells */
 }
-/* Additional styling as needed */
+
+.compact-table th, .compact-table td {
+    border: 1px solid #ddd; /* Optional: adds a light border */
+    padding: 5px; /* Minimal padding for table cells */
+    text-align: left; /* Aligns text to the left, adjust as needed */
+}
+
+.compact-table thead {
+    background-color: #f2f2f2; /* Optional: background color for header */
+}
+
+.compact-table tbody tr:nth
+* Additional styling as needed */
