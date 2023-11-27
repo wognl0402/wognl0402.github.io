@@ -40,6 +40,6 @@ td.image-container  {
 }
 
 .hover-image:hover {
-    content: url('images/profile_hover.jpg'); /* image on hover */
+    cursor: url('images/profile_hover.jpg'), auto; /* image on hover */
 }
 /* Additional styling as needed */
