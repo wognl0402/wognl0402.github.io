@@ -15,7 +15,7 @@ window.PROJECTS = [
     image: "images/2023_IITP.gif",
     title: "Sim2Real / Real2Real for robotic skill learning",
     subtitleHtml: "Project @ <a href=\"https://rirolab.kaist.ac.kr/\">RIRO Lab</a>, 2023",
-    descriptionHtml: "In this project, we train robotic agents to acquire human-like skills through interactive learning. We utilize simulated environments in <a href=\"https://developer.nvidia.com/isaac-sim\">IsaacSim</a> or employ teleoperation to guide and teach the robots, such as deformable object manipulation.",
+    descriptionHtml: "In this project, we train robotic agents to acquire human-like skills through interactive learning. We utilize simulated environments in IsaacSim or employ teleoperation to guide and teach the robots, such as deformable object manipulation.",
   },
   {
     image: "images/2022_PINN.gif",
