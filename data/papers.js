@@ -3,8 +3,8 @@ window.PAPERS = [
   {
     image: "images/2026_ICRA_SEEC_demo.gif",
     title: "SEEC: Stable End-Effector Control with Model-Enhanced Residual Learning for Humanoid Loco-Manipulation",
-    authors: ["Jaehwi Jang", "Zhuoheng Wang*", "Ziyi Zhou", "Feiyang Wu", "Ye Zhao"],
-    boldAuthors: ["Jaehwi Jang"],
+    authors: ["Jaehwi Jang*", "Zhuoheng Wang*", "Ziyi Zhou", "Feiyang Wu", "Ye Zhao"],
+    boldAuthors: ["Jaehwi Jang*"],
     venue: "IEEE Int'l Conf. on Robotics and Automation (ICRA), 2026",
     links: [
       { label: "Project Page", url: "https://seec-humanoid.github.io" },
@@ -16,7 +16,7 @@ window.PAPERS = [
     title: "ILCL: Inverse Logic-Constraint Learning from Temporally Constrained Demonstrations",
     authors: ["Minwoo Cho", "Jaehwi Jang", "Daehyung Park"],
     boldAuthors: ["Jaehwi Jang"],
-    venue: "IEEE Robotics and Automation Letters (RA-L), accepted",
+    venue: "IEEE Robotics and Automation Letters (RA-L), 2025",
     links: [
       { label: "Project Page", url: "https://minchou.github.io/projects/ilcl.html" },
     ],
@@ -36,7 +36,7 @@ window.PAPERS = [
     title: "Learn to Teach: Sample-Efficient Privileged Learning for Humanoid Locomotion over Diverse Terrains",
     authors: ["Feiyang Wu", "Xavier Nal", "Jaehwi Jang", "Wei Zhu", "Zhaoyuan Gu", "Anqi Wu", "Ye Zhao"],
     boldAuthors: ["Jaehwi Jang"],
-    venue: "arXiv preprint arXiv:2402.06783 (2025)",
+    venue: "IEEE Robotics and Automation Letters (RA-L), 2025",
     links: [
       { label: "Project Page", url: "https://lidar-learn-to-teach.github.io" },
       { label: "PDF", url: "https://arxiv.org/abs/2402.06783" },

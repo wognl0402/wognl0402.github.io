@@ -2,8 +2,8 @@
   function renderAwards(container) {
     if (!window.AWARDS || !container) return;
     var html = window.AWARDS.map(function (a) {
-      var icon = a.icon ? '<span style="font-size: 16px; margin-bottom:-15px;color: black">' + a.icon + '</span> ' : '';
-      return '<div style="font-size: 16px; margin-bottom:-15px;color: black">' + icon + '<b>' + (a.name || a.title) + '</b>, ' + (a.year || "") + '</div><br>';
+      var icon = a.icon ? '<span style="font-size: 1.1em; margin-bottom:-15px;color: black">' + a.icon + '</span> ' : '';
+      return '<div style="font-size: 1.1em; margin-bottom:-15px;color: black">' + icon + '<b>' + (a.name || a.title) + '</b>, ' + (a.year || "") + '</div><br>';
     }).join('');
     container.innerHTML = html;
   }
@@ -46,8 +46,14 @@
         return '<a href="' + l.url + '" target="_blank">[' + l.label + ']</a>';
       }).join(' ');
       var desc = p.descriptionHtml || (p.description || '');
-      return '<tr><td><a href="' + (p.image || '#') + '" data-lightbox="">' +
-        '<img style="width:100%" src="' + (p.image || '') + '" /></a></td><td><b>' + (p.title || '') + '</b><br />' +
+      var media;
+      if (p.video) {
+        var vType = p.video.slice(-4) === '.mov' ? 'video/quicktime' : (p.video.slice(-4) === '.m4v' ? 'video/x-m4v' : 'video/mp4');
+        media = '<video style="width:100%" autoplay muted loop playsinline><source src="' + p.video + '" type="' + vType + '"></video>';
+      } else {
+        media = '<a href="' + (p.image || '#') + '" data-lightbox=""><img style="width:100%" src="' + (p.image || '') + '" /></a>';
+      }
+      return '<tr><td>' + media + '</td><td><b>' + (p.title || '') + '</b><br />' +
         subtitle + venue + desc + (linksHtml ? '<br />' + linksHtml : '') + '</td></tr>';
     }).join('');
     container.innerHTML = html;
