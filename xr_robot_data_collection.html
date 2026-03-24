@@ -24,11 +24,20 @@
         min-height: 0;
         background: #e8e8e8;
       }
-      .xr-media-band__stack video,
-      .xr-media-band__stack img {
+      .xr-media-band__stack-cell {
         flex: 1 1 0;
-        width: 100%;
         min-height: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+      .xr-media-band__stack-cell img,
+      .xr-media-band__stack-cell video {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
         object-fit: contain;
         object-position: center;
         display: block;
@@ -54,13 +63,14 @@
           grid-template-columns: 1fr;
           height: auto;
         }
-        .xr-media-band__stack video,
-        .xr-media-band__stack img {
+        .xr-media-band__stack-cell {
           flex: none;
+        }
+        .xr-media-band__stack-cell img,
+        .xr-media-band__stack-cell video {
           width: 100%;
           height: auto;
           max-height: none;
-          object-fit: contain;
         }
         .xr-media-band__single video,
         .xr-media-band__single img {
@@ -92,10 +102,12 @@
 
                 <div class="xr-media-band">
                     <div class="xr-media-band__stack">
-                        <video controls playsinline muted loop autoplay title="Meta Quest: first-person VR scene with virtual hand interaction">
-                            <source src="images/vr-ex.mp4" type="video/mp4">
-                        </video>
-                        <img src="images/xrinteraction.gif" alt="Meta Quest pass-through: spatial mapping and labeled virtual manipulator over a real desk">
+                        <div class="xr-media-band__stack-cell">
+                            <img src="images/vr-ex.gif" alt="Meta Quest: first-person VR scene with virtual hand interaction">
+                        </div>
+                        <div class="xr-media-band__stack-cell">
+                            <img src="images/xrinteraction.gif" alt="Meta Quest pass-through: spatial mapping and labeled virtual manipulator over a real desk">
+                        </div>
                     </div>
                     <div class="xr-media-band__single">
                         <video controls playsinline muted loop autoplay title="iOS Unity app: real robot arm with on-screen teleoperation controls">
