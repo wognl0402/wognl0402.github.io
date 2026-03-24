@@ -9,6 +9,7 @@ window.PROJECTS = [
     image: "images/xr_robot_data_collection.png",
     title: "XR-robot data collection (Unity)",
     description: "We use VR/XR devices to collect demonstration data in a virtual system. An immersive interface enables natural human-robot interaction through gesture-based control and hand tracking, mapping user motions to a robotic arm. We incorporate torque feedback from the physical robot and interact with the environment to collect a more safe dataset for skill learning.",
+    links: [{ label: "Project Page", url: "xr_robot_data_collection.html" }],
   },
   {
     image: "images/2023_IITP.gif",

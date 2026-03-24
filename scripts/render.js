@@ -43,7 +43,8 @@
       var subtitle = (p.subtitleHtml || (p.subtitle ? p.subtitle : '')) ? (p.subtitleHtml || p.subtitle) + '<br />' : '';
       var venue = p.venue ? '<i>' + p.venue + '</i><br /><br/>' : '';
       var linksHtml = (p.links || []).map(function (l) {
-        return '<a href="' + l.url + '" target="_blank">[' + l.label + ']</a>';
+        var ext = /^https?:\/\//i.test(l.url);
+        return '<a href="' + l.url + '"' + (ext ? ' target="_blank" rel="noopener noreferrer"' : '') + '>[' + l.label + ']</a>';
       }).join(' ');
       var desc = p.descriptionHtml || (p.description || '');
       var media;

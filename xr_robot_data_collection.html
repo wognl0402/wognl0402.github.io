@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>XR-robot data collection — Jaehwi Jang</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="images/generic_icon.png" sizes="16x16">
+    <style>
+      .xr-media-band {
+        display: grid;
+        grid-template-columns: 1fr 0.68fr 1.32fr;
+        gap: 6px;
+        width: 100%;
+        margin: 1em 0;
+        height: clamp(280px, 48vw, 520px);
+        min-height: 0;
+      }
+      .xr-media-band__stack {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        min-width: 0;
+        min-height: 0;
+        background: #e8e8e8;
+      }
+      .xr-media-band__stack video,
+      .xr-media-band__stack img {
+        flex: 1 1 0;
+        width: 100%;
+        min-height: 0;
+        object-fit: contain;
+        object-position: center;
+        display: block;
+      }
+      .xr-media-band__single {
+        min-width: 0;
+        min-height: 0;
+      }
+      .xr-media-band__single video,
+      .xr-media-band__single img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+        display: block;
+      }
+      .xr-media-band .xr-media-band__stack + .xr-media-band__single,
+      .xr-media-band .xr-media-band__stack + .xr-media-band__single + .xr-media-band__single {
+        background: #e8e8e8;
+      }
+      @media (max-width: 720px) {
+        .xr-media-band {
+          grid-template-columns: 1fr;
+          height: auto;
+        }
+        .xr-media-band__stack video,
+        .xr-media-band__stack img {
+          flex: none;
+          width: 100%;
+          height: auto;
+          max-height: none;
+          object-fit: contain;
+        }
+        .xr-media-band__single video,
+        .xr-media-band__single img {
+          height: auto;
+          aspect-ratio: 16 / 10;
+        }
+      }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3E4EJM04HN"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3E4EJM04HN');
+    </script>
+</head>
+
+<body>
+    <table>
+        <tbody>
+        <tr>
+            <td style="padding:1.5%;">
+                <p style="margin-bottom:0.5em;"><a href="index.html">← Back to homepage</a> · <a href="index.html#projects">Projects</a></p>
+                <h1 style="text-align:left">XR-robot data collection (Unity)</h1>
+                <p>
+                    We use VR/XR devices to collect demonstration data in a virtual and a real system. An immersive interface enables natural human-robot interaction through hand tracking and mapping user motions to a robotic arm.
+                    We incorporate feedback from the robot controller modules to collect a more safe dataset for skill learning.
+                </p>
+
+                <div class="xr-media-band">
+                    <div class="xr-media-band__stack">
+                        <video controls playsinline muted loop autoplay title="Meta Quest: first-person VR scene with virtual hand interaction">
+                            <source src="images/vr-ex.mp4" type="video/mp4">
+                        </video>
+                        <img src="images/xrinteraction.gif" alt="Meta Quest pass-through: spatial mapping and labeled virtual manipulator over a real desk">
+                    </div>
+                    <div class="xr-media-band__single">
+                        <video controls playsinline muted loop autoplay title="iOS Unity app: real robot arm with on-screen teleoperation controls">
+                            <source src="images/robo.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="xr-media-band__single">
+                        <img src="images/vr_ik.gif" alt="Pico 4U and G1: sensor heatmaps and chest camera beside 3D humanoid IK visualization">
+                    </div>
+                </div>
+                <h2 style="text-align:left">XR interaction, VR capture, and simulation</h2>
+                <p>
+                    <b>Unity environment development — VR environment (Meta Quest).</b>
+                    Left Top: First-person view inside a synthetic scene (e.g., a warehouse with a conveyor), with a translucent virtual hand reaching and interacting with objects—typical of collecting egocentric demonstrations in VR.
+                    Left Bottom: A mixed-reality view where a digital manipulator is registered to the real desk; joint labels (elbow, wrist, gripper) float in space so operators see both the physical setup and the commanded kinematic chain.
+                    Middle: A Unity build running on iPhone: on-screen sliders bridge touch UI for interactive monitoring of the robot.
+                </p>
+                <p>
+                    <b>VR Data collection (Pico 4U).</b>
+                    Right: Pico 4U controller input is converted to IK targets for the G1 humanoid and used for collecting the humanoid dataset. Additionally, tactile sensing is incorporated as a modality and fed into a tactile-policy. Stacked sensor panels show heatmap-style tactile or proximity maps and a chest-mounted camera stream, so contact and body state are logged alongside motion. The session can be reviewed as both raw sensing and full-body IK control diagnostics, visualized in a 3D viewport with the G1 model on a grid, RGB axes at joints, and constraint lines linking IK targets.
+                </p>
+
+                <p style="text-align:right;font-size:small;margin-top:1.5em;">
+                    <a href="index.html">Home</a>
+                </p>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>
