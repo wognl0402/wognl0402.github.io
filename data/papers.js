@@ -9,7 +9,7 @@ window.PAPERS = [
     venue: "Conference on Robot Learning (CoRL), 2026",
     links: [
       { label: "Project Page", url: "https://wt-umi.github.io/WTUMI/" },
-      { label: "PDF", url: "https://arxiv.org/abs/2606.13232" },
+      { label: "arXiv", url: "https://arxiv.org/abs/2606.13232" },
     ],
   },
   {
@@ -21,7 +21,7 @@ window.PAPERS = [
     venue: "Preprint, 2026",
     links: [
       { label: "Project Page", url: "https://opt2vla.github.io" },
-      { label: "PDF", url: "https://arxiv.org/abs/2609.23968" },
+      { label: "arXiv", url: "https://arxiv.org/abs/2609.23968" },
     ],
   },
   {
@@ -33,6 +33,7 @@ window.PAPERS = [
     venue: "Preprint, 2026",
     links: [
       { label: "Project Page", url: "https://tapnav.github.io/TAPNAV-Project/" },
+      { label: "arXiv", url: "https://arxiv.org/abs/2610.10748" },
     ],
   },
   {
@@ -43,7 +44,7 @@ window.PAPERS = [
     venue: "IEEE Int'l Conf. on Robotics and Automation (ICRA), 2026",
     links: [
       { label: "Project Page", url: "https://seec-humanoid.github.io" },
-      { label: "PDF", url: "https://arxiv.org/abs/2509.21231" },
+      { label: "arXiv", url: "https://arxiv.org/abs/2509.21231" },
     ],
   },
   {
@@ -54,6 +55,7 @@ window.PAPERS = [
     venue: "IEEE Robotics and Automation Letters (RA-L), 2025",
     links: [
       { label: "Project Page", url: "https://minchou.github.io/projects/ilcl.html" },
+      { label: "arXiv", url: "https://arxiv.org/abs/2507.11000" },
     ],
   },
   {
@@ -64,6 +66,7 @@ window.PAPERS = [
     venue: "IEEE Robotics and Automation Letters (RA-L), 2025",
     links: [
       { label: "Project Page", url: "https://opt2skill.github.io" },
+      { label: "arXiv", url: "https://arxiv.org/abs/2409.20514" },
     ],
   },
   {
@@ -74,7 +77,7 @@ window.PAPERS = [
     venue: "IEEE Robotics and Automation Letters (RA-L), 2025",
     links: [
       { label: "Project Page", url: "https://lidar-learn-to-teach.github.io" },
-      { label: "PDF", url: "https://arxiv.org/abs/2402.06783" },
+      { label: "arXiv", url: "https://arxiv.org/abs/2402.06783" },
     ],
   },
   {
@@ -84,7 +87,7 @@ window.PAPERS = [
     boldAuthors: ["Jaehwi Jang"],
     venue: "IEEE Robotics and Automation Letters (RA-L), 2024",
     links: [
-      { label: "PDF", url: "https://arxiv.org/abs/2306.12357" },
+      { label: "arXiv", url: "https://arxiv.org/abs/2306.12357" },
       { label: "Video", url: "https://youtu.be/SD9HV1z5owk" },
       { label: "Site (ongoing)", url: "https://sites.google.com/view/transferable-cl" },
     ],
@@ -97,6 +100,7 @@ window.PAPERS = [
     equalNote: "*- authors contributed equally",
     venue: "IEEE Int'l Conf. on Robot and Human Interactive Communication (RO-MAN), 2023",
     links: [
+      { label: "arXiv", url: "https://arxiv.org/abs/2307.07468" },
       { label: "PDF", url: "https://drive.google.com/file/d/1LMA34XNXyEpW6uJBIgyIq8xkbeJQ4onr/view?usp=share_link" },
     ],
   },
